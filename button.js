@@ -4,14 +4,18 @@ buttontemplate.innerHTML = `
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
         a{width:170px; height:45px;display:flex;justify-content:center;align-items:center;
-            position:relative;overflow:hidden;border: 2px solid black;border-radius:50px;
+            position:relative;border: 2px solid black;border-radius:50px;overflow:hidden;
         }
         p{position:absolute;}
+        .text1{margin-top:60px; transition: 2s;}
+        .text2{transition: 2s;}
+        a:hover .text1{margin-top: 0;}
+        a:hover .text2{margin-bottom: 60px;}
     </style>
     <div>
         <a>
-            <p></p>
-            <p></p>
+            <p class="text1"></p>
+            <p class="text2"></p>
         </a>
     </div>
 `;
@@ -32,4 +36,4 @@ class ButtonComponent extends HTMLElement {
     }
 }
 window.customElements.define('button-card',ButtonComponent);
-
+//
