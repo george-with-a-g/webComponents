@@ -5,11 +5,13 @@ buttontemplate.innerHTML = `
         *{margin:0;padding:0;box-sizing:border-box;}
         a{width:170px; height:45px;display:flex;justify-content:center;align-items:center;
             position:relative;border: 2px solid black;border-radius:50px;overflow:hidden;
+            background-color: transparent;transition:1s;
         }
         p{position:absolute;}
-        .text1{margin-top:60px; transition: 2s;}
-        .text2{transition: 2s;}
-        a:hover .text1{margin-top: 0;}
+        .text1{margin-top:60px; transition: 1s; color: black;}
+        .text2{transition: 1s;}
+        a:hover{ background-color: black;}
+        a:hover .text1{margin-top: 0; color: white;}
         a:hover .text2{margin-bottom: 60px;}
     </style>
     <div>
